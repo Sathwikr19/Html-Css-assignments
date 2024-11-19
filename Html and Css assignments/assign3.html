@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content: "*";
+            font-size:large;
+        }
+        h1::after{
+            content: "*";
+            font-size:large;
+        }
+        div::first-letter{
+            font-size: 3em;
+            font-weight: bold;
+            color:rgb(70, 142, 145);
+        }
+        .reddy::first-line{
+            font-size: 1.5em;
+            color: rgb(35, 109, 35);
+        }
+        ::selection{
+            background-color:#3399ff;
+            color: white;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!-------Before, After---------->
+    <h1>Good Afternoon</h1><br><br>
+
+
+    <!-------First letter---------->
+    <div> pseudo-element targets the first letter of an element's text. It is  commonly used for typographic styling like drop caps</div><br><br>
+
+
+    <!-------First Line---------->
+    <p class="Sathwik">the first line of the paragraph is made larger,<br> italicized, and colored green.</p><br><br>
+
+
+    <!-------Selection---------->
+    <p> when the text is selected, its background turns to gray and the text color becomes white.</p><br><br>
+
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(164, 160, 160) ;
+        }
+        .style-button{
+            background-color: rgb(167, 231, 103);
+            border-radius: 15px;
+            padding: 5px 10px;
+            color: black;
+            cursor: pointer;
+            font-size: larger;
+        }
+        .style-button:hover{
+            background-color: blueviolet;
+            padding: 8px;
+            color: aliceblue;
+
+        }
+        .style-button:focus{
+            background-color:blue;
+            padding: 10px;
+            color: cornflowerblue;
+
+        }
+        .style-button:active{
+            background-color: ;
+            color: bisque;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <button class="style-button">Good Night!</button>
+</body>
+</html>
